@@ -64,7 +64,7 @@ task automation() {
             // Decrease right side of hand
             motor[handRight] = motor[handRight] - servoIncrement;
         }
-	}
+	
 
 	// 5. rotate hand
 
@@ -83,7 +83,7 @@ task automation() {
             // Decrease right side of hand
             motor[handRight] = motor[handRight] + servoIncrement;
         }
-	}
+	
 
 	// 8. move backward for 5 second
 	motor[leftMotor] = -100;
