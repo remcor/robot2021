@@ -59,11 +59,10 @@ task automation() {
 
 	// 4. open hand
 	while (motor[handLeft] < maxServoPos && motor[handRight] < MaxServoNeg) {
-            // Increment left side of hand
-            motor[handLeft] = motor[handLeft] + servoIncrement;
-            // Decrease right side of hand
-            motor[handRight] = motor[handRight] - servoIncrement;
-        }
+		// Increment left side of hand
+		motor[handLeft] = motor[handLeft] + servoIncrement;
+		// Decrease right side of hand
+		motor[handRight] = motor[handRight] - servoIncrement;
 	}
 
 	// 5. rotate hand
@@ -78,11 +77,10 @@ task automation() {
 
 	// 7. close hand
 	while (motor[handLeft] < maxServoNeg && motor[handRight] < MaxServoPos) {
-            // Increment left side of hand
-            motor[handLeft] = motor[handLeft] - servoIncrement;
-            // Decrease right side of hand
-            motor[handRight] = motor[handRight] + servoIncrement;
-        }
+		// Increment left side of hand
+		motor[handLeft] = motor[handLeft] - servoIncrement;
+		// Decrease right side of hand
+		motor[handRight] = motor[handRight] + servoIncrement;
 	}
 
 	// 8. move backward for 5 second
